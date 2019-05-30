@@ -1,1 +1,20 @@
+解决emmet tab键失效问题
+打开preferences-PackageSettings-Emmet-Key Bindings-User，
+加入：
 
+
+[
+	{
+		"keys": ["tab"], 
+		"args": {
+			"action": "expand_abbreviation"
+			}, 
+		"command": "run_emmet_action", 
+		"context": [
+			{
+			"key": "emmet_action_enabled.expand_abbreviation"
+			}
+		]
+	}
+]
+即可
